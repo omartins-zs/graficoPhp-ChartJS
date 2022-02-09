@@ -33,6 +33,20 @@ $response = json_decode($response, true);
         <canvas id="myChart" width="400" height="400"></canvas>
     </div>
     <script>
+    var labels = [
+        <?php
+            foreach ($response[0]['res'] as $v) {
+                echo "'" . $v['periodo'] . "',";
+            }
+            ?>
+    ];
+
+
+
+    console.log(labels);
+
+
+
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
         type: 'bar',
