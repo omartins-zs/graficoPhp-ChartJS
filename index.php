@@ -1,5 +1,5 @@
 <?php
-$nome = "André";
+$nome = "Andre";
 $response = file_get_contents("https://servicodados.ibge.gov.br/api/v2/censos/nomes/$nome");
 // Return em JSON convertido em array associativo
 $response = json_decode($response, true);
@@ -58,7 +58,7 @@ $response = json_decode($response, true);
         data: {
             labels: labels,
             datasets: [{
-                label: '# of Votes',
+                label: '# Frequencia do nome <?php echo $response[0]['nome']; ?>',
                 data: data,
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
