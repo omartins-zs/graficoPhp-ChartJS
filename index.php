@@ -41,11 +41,16 @@ $response = json_decode($response, true);
             ?>
     ];
 
-
+    var data = [
+        <?php
+            foreach ($response[0]['res'] as $v) {
+                echo "'" . $v['frequencia'] . "',";
+            }
+            ?>
+    ];
 
     console.log(labels);
-
-
+    console.log(data);
 
     const ctx = document.getElementById('myChart').getContext('2d');
     const myChart = new Chart(ctx, {
