@@ -1,1 +1,11 @@
-Iniciando Project Criar Gráfico com Chart JS, PHP
+Iniciando Project Criar Gráfico com Chart JS e PHP
+
+pegando dados da API de nomes do IBGE    usando a funcao file_get_contents
+
+Teste dos Dados que vem da API
+
+width: 500px;
+
+Conferindo Dados vindo da API com Console log
+
+Adicionando dados da variaveis em seus Locais 
